@@ -87,8 +87,10 @@ public class MainActivity extends AppCompatActivity {
                 {
                     if (txtArticulo.getText().toString().length() == 0 ||
                             txtDescripcion.getText().toString().length() == 0 ||
-                            txtSerie.getText().toString().length() == 0)
+                            txtSerie.getText().toString().length() == 0) {
+                        Toast.makeText(getApplicationContext(), "Llene el formulario correctamente!.", Toast.LENGTH_LONG).show();
                         return;
+                    }
                     sql = new SQL(getApplicationContext());
                     sql.abrir();
                     sql.insertarProducto(txtArticulo.getText().toString(), txtDescripcion.getText().toString(), txtSerie.getText().toString());
@@ -115,8 +117,10 @@ public class MainActivity extends AppCompatActivity {
                 {
                     if (txtArticulo.getText().toString().length() == 0 ||
                             txtDescripcion.getText().toString().length() == 0 ||
-                            txtSerie.getText().toString().length() == 0)
+                            txtSerie.getText().toString().length() == 0) {
+                        Toast.makeText(getApplicationContext(), "Llene el formulario correctamente!.", Toast.LENGTH_LONG).show();
                         return;
+                    }
                     sql = new SQL(getApplicationContext());
                     sql.abrir();
                     Cursor cursor = sql.obtenerProductos(1);
