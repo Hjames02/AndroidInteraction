@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ADB</string>
+    <string name="serie">Serie</string>
+    <string name="descripcion">Descripción</string>
+    <string name="agregar">Agregar</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="articulo">Artículo</string>
+    <string name="header_name">Nombre</string>
+    <string name="header_description">Descripción</string>
+    <string name="header_serial">Serie</string>
+</resources>
